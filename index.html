@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="px-8 py-20 lg:p-20 bg-[url('../images/bg-intro-mobile.png')] lg:bg-[url('../images/bg-intro-desktop.png')] xl:pt-40 bg-primary-200 bg-cover bg-top font-serif">
+
+  <main class="flex flex-col lg:flex-row gap-10">
+    <div class=" text-center lg:text-left lg:w-1/2 lg:self-center">
+      <h2 class="text-primary-50 font-bold text-2xl lg:text-5xl">Learn to code by watching others</h2>
+
+      <p class="text-primary-50 font-normal mt-8 mb-10">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="">
+      <div class="w-100 bg-primary-400 rounded-lg px-10 py-4 text-center text-primary-50 mb-10 shadow-[0_10px_0_-1px_rgba(0,0,0,0.16)]">
+        <p><span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+      <form id="form" action="#" class="bg-primary-50 px-5 py-8 rounded-lg shadow-[0_10px_0_-1px_rgba(0,0,0,0.16)]">
+        <label class="relative block">
+          <span class="sr-only">First Name</span>
+          <input class="placeholder:text-primary-100 placeholder:font-semibold block bg-white w-full border border-primary-100 rounded-md p-4 focus:outline-none focus:border-primary-900 sm:text-sm" placeholder="First Name" type="text" name="search" id="first-name"/>
+          <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+            <img src="images/icon-error.svg" alt="" class="hidden" id="first-img">
+          </span>
+        </label>
+        <p class="text-xs text-primary-200 text-right italic py-2 hidden" id="first-warning">
+          First Name cannot be empty
+        </p>
+        <label class="relative block mt-4">
+          <span class="sr-only">Last Name</span>
+          <input class="placeholder:text-primary-100 placeholder:font-semibold block bg-white w-full border border-primary-100 rounded-md p-4 focus:outline-none focus:border-primary-900 focus:ring-primary-900 focus:ring-1 sm:text-sm" placeholder="Last Name" type="text" name="search" id="last-name"/>
+          <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+            <img src="images/icon-error.svg" alt="" class=" hidden" id="last-img">
+          </span>
+        </label>
+        <p class="text-xs text-primary-200 text-right italic py-2 hidden" id="last-warning">
+          Last Name cannot be empty
+        </p>
+        <label class="relative block mt-4">
+          <span class="sr-only">Email Address</span>
+          <input class="placeholder:text-primary-100 placeholder:font-semibold block bg-white w-full border border-primary-100 rounded-md p-4 focus:outline-none focus:border-primary-900 focus:ring-primary-900 focus:ring-1 sm:text-sm" placeholder="Email Address" type="text" name="search" id="email"/>
+          <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+            <img src="images/icon-error.svg" alt="" class="hidden" id="email-img">
+          </span>
+        </label>
+        <p class="text-xs text-primary-200 text-right italic py-2 hidden" id="email-warning">
+          Looks like this is not an email
+        </p>
+        <label class="relative block mt-4">
+          <span class="sr-only">Password</span>
+          <input class="placeholder:text-primary-100 placeholder:font-semibold block bg-white w-full border border-primary-100 rounded-md p-4 focus:outline-none focus:border-primary-900 focus:ring-primary-900 focus:ring-1 sm:text-sm" placeholder="Password" type="password" name="search" id="password"/>
+          <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+            <img src="images/icon-error.svg" alt="" class="hidden" id="pass-img">
+          </span>
+        </label>
+        <p class="text-xs text-primary-200 text-right italic py-2 hidden" id="pass-warning">
+          Password cannot be empty
+        </p>
+        <button type="submit" class="bg-primary-300 w-full uppercase text-primary-50 p-4 rounded mt-4 shadow-[0_6px_0_-1px_rgba(31,122,83,0.8)] hover:bg-primary-500">Claim your free trial</button>
+        <p class="text-center text-xs text-primary-100 mt-4">By clicking the button, you are agreeing to our <span class="text-primary-200 font-semibold">Terms and Services</span></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="mt-10">
+    <p class="text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-primary-50" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://dwi-indah.site/" class="text-primary-50" target="_blank">Dwi Indah P</a>.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
